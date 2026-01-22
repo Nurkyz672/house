@@ -5,7 +5,6 @@ from .serializers import (UserProfileListSerializer,RegionListSerializer,ReviewS
                           ReviewCreateSerializer)
 from .models import (UserProfile,Region,Review,City,District,Property)
 from rest_framework import viewsets,generics,status
-from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework.filters import SearchFilter, OrderingFilter
 
 
