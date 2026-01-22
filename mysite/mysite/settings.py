@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'house_app',
     "phonenumber_field",
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,8 @@ AUTH_USER_MODEL = 'house_app.UserProfile'
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend']
+}
